@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejala - Kindness in Every Bite</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('https://readdy.ai/api/search-image?query=Beautiful%20farm%20landscape%20with%20green%20fields%2C%20happy%20healthy%20livestock%20animals%20grazing%20in%20lush%20pastures%2C%20soft%20golden%20sunlight%2C%20rolling%20hills%20in%20background%2C%20natural%20organic%20farming%20scene%2C%20peaceful%20rural%20environment%2C%20high%20quality%20professional%20photography&width=1600&height=800&seq=1&orientation=landscape');
+            background-size: cover;
+            background-position: center;
+        }
+        .leaf-accent {
+            position: relative;
+        }
+        .leaf-accent::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            right: -5px;
+            width: 30px;
+            height: 30px;
+            background-color: #8CC63F;
+            border-radius: 50% 50% 0 50%;
+            transform: rotate(45deg);
+            z-index: -1;
+        }
+    </style>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#216131',secondary:'#8CC63F'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="text-4xl font-bold text-[#8CC63F] font-['Pacifico']">Bejala</div>
+                <div class="ml-2 text-sm italic text-[#8CC63F]">kindness in every bite</div>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-primary hover:text-secondary font-medium">Home</a>
+                <a href="#about" class="text-primary hover:text-secondary font-medium">About Us</a>
+                <a href="#products" class="text-primary hover:text-secondary font-medium">Products</a>
+                <a href="#sustainability" class="text-primary hover:text-secondary font-medium">Sustainability</a>
+                <a href="#contact" class="text-primary hover:text-secondary font-medium">Contact</a>
+            </nav>
+            <div class="md:hidden w-8 h-8 flex items-center justify-center">
+                <i class="ri-menu-line text-primary ri-lg"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg relative">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="container mx-auto px-4 py-24 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-5xl font-bold text-white mb-6">Kindness in Every Bite</h1>
+                <p class="text-xl text-white mb-8">At Bejala, we believe that nourishing animals is not just a business — it's a responsibility. With every batch of animal food we produce, we infuse care, quality, and sustainability into every grain.</p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-[#8CC63F] text-white px-6 py-3 font-medium !rounded-button hover:bg-opacity-90 transition whitespace-nowrap">Discover Our Products</button>
+                    <button class="bg-white text-primary px-6 py-3 font-medium !rounded-button hover:bg-gray-100 transition whitespace-nowrap">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-primary mb-6">Our Mission</h2>
+                <p class="text-xl text-gray-700 mb-8">To provide high-quality, nutritious, and sustainable animal food products — made with compassion, rooted in tradition, and crafted for the future.</p>
+                <div class="w-20 h-1 bg-secondary mx-auto"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-12 text-center">What Makes Us Unique</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 flex items-center justify-center bg-[#8CC63F] text-white rounded-full mb-4">
+                        <i class="ri-award-line ri-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Quality Assured</h3>
+                    <p class="text-gray-600">We adhere to the highest international production standards, ensuring our products meet the nutritional needs of livestock, poultry, and pets.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 flex items-center justify-center bg-[#8CC63F] text-white rounded-full mb-4">
+                        <i class="ri-recycle-line ri-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Sustainable Practices</h3>
+                    <p class="text-gray-600">From sourcing raw materials to manufacturing and packaging, we minimize our environmental footprint and promote eco-friendly solutions.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 flex items-center justify-center bg-[#8CC63F] text-white rounded-full mb-4">
+                        <i class="ri-heart-line ri-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Driven by Kindness</h3>
+                    <p class="text-gray-600">We treat animals, people, and the planet with respect. Our mission extends beyond nutrition — we aim to improve lives through ethical and humane practices.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 flex items-center justify-center bg-[#8CC63F] text-white rounded-full mb-4">
+                        <i class="ri-flag-line ri-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Proudly Ethiopian</h3>
+                    <p class="text-gray-600">Bejala celebrates Ethiopian heritage by combining traditional wisdom with modern technology to create world-class animal food products.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 flex items-center justify-center bg-[#8CC63F] text-white rounded-full mb-4">
+                        <i class="ri-global-line ri-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Global Exporter</h3>
+                    <p class="text-gray-600">Bejala exports animal food to markets across Africa and beyond, delivering trusted quality and reliability to international partners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-12 text-center">Our Products</h2>
+            <p class="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto">We offer a diverse range of animal feed tailored to support healthy growth, productivity, and well-being.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=High%20quality%20livestock%20feed%20for%20cattle%2C%20sheep%2C%20and%20goats%20with%20natural%20grains%20and%20nutritious%20ingredients%20on%20clean%20white%20background%2C%20professional%20product%20photography%2C%20soft%20lighting%2C%20commercial%20quality&width=600&height=400&seq=2&orientation=landscape" alt="Livestock Feed" class="w-full h-full object-cover group-hover:scale-105 transition">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-primary mb-3">Livestock Feed</h3>
+                        <p class="text-gray-600 mb-4">Premium nutrition for cattle, sheep, goats, camels, and cows. Formulated to support optimal health and productivity.</p>
+                        <button class="bg-[#8CC63F] text-white px-4 py-2 font-medium !rounded-button hover:bg-opacity-90 transition whitespace-nowrap">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=High%20quality%20poultry%20feed%20with%20natural%20grains%20and%20nutritious%20ingredients%20on%20clean%20white%20background%2C%20professional%20product%20photography%2C%20soft%20lighting%2C%20commercial%20quality&width=600&height=400&seq=3&orientation=landscape" alt="Poultry Feed" class="w-full h-full object-cover group-hover:scale-105 transition">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-primary mb-3">Poultry Feed</h3>
+                        <p class="text-gray-600 mb-4">Specially formulated for optimal egg and meat production. Balanced nutrition for healthy, productive poultry.</p>
+                        <button class="bg-[#8CC63F] text-white px-4 py-2 font-medium !rounded-button hover:bg-opacity-90 transition whitespace-nowrap">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-700 mb-6">All products are produced under strict quality control and backed by scientific research.</p>
+                <button class="bg-primary text-white px-6 py-3 font-medium !rounded-button hover:bg-opacity-90 transition whitespace-nowrap">View All Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-12 text-center">Why Choose Bejala?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://readdy.ai/api/search-image?query=Modern%20animal%20feed%20production%20facility%20with%20clean%20equipment%2C%20workers%20in%20protective%20gear%2C%20quality%20control%20processes%2C%20bright%20and%20professional%20environment%2C%20commercial%20photography%20style&width=600&height=500&seq=4&orientation=landscape" alt="Bejala Production Facility" class="rounded-lg shadow-lg w-full h-auto">
+                </div>
+                
+                <div>
+                    <div class="mb-6">
+                        <div class="flex items-start mb-3">
+                            <div class="w-10 h-10 flex items-center justify-center bg-[#8CC63F] text-white rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="ri-check-line ri-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary mb-2">Export-Ready Quality</h3>
+                                <p class="text-gray-600">Our products meet international standards and are ready for export to markets worldwide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex items-start mb-3">
+                            <div class="w-10 h-10 flex items-center justify-center bg-[#8CC63F] text-white rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="ri-scales-3-line ri-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary mb-2">Scalable Solutions</h3>
+                                <p class="text-gray-600">Whether you're a small farm or a large agricultural operation, we have solutions that scale to your needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex items-start mb-3">
+                            <div class="w-10 h-10 flex items-center justify-center bg-[#8CC63F] text-white rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="ri-leaf-line ri-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary mb-2">Ethical Production</h3>
+                                <p class="text-gray-600">Our commitment to ethical practices ensures that our products are good for animals, people, and the planet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 flex items-center justify-center bg-[#8CC63F] text-white rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="ri-customer-service-2-line ri-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary mb-2">Customer Support</h3>
+                                <p class="text-gray-600">Our dedicated team provides exceptional service and support to all our customers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section id="sustainability" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-primary mb-8 text-center">Sustainability at Our Core</h2>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/2">
+                            <img src="https://readdy.ai/api/search-image?query=Sustainable%20farming%20practices%2C%20eco-friendly%20agricultural%20methods%2C%20green%20technology%20in%20farming%2C%20environmental%20conservation%20in%20agriculture%2C%20professional%20photography%20style&width=500&height=400&seq=5&orientation=landscape" alt="Sustainability Practices" class="rounded-lg w-full h-auto">
+                        </div>
+                        <div class="md:w-1/2">
+                            <h3 class="text-xl font-semibold text-primary mb-4">Our Commitment to the Planet</h3>
+                            <p class="text-gray-600 mb-4">At Bejala, sustainability isn't just a buzzword—it's integrated into everything we do. We're committed to reducing our environmental impact while producing high-quality animal feed.</p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <div class="w-6 h-6 flex items-center justify-center bg-[#8CC63F] text-white rounded-full mr-3 mt-1 flex-shrink-0">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                    <span class="text-gray-600">Locally sourced ingredients to reduce carbon footprint</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-6 h-6 flex items-center justify-center bg-[#8CC63F] text-white rounded-full mr-3 mt-1 flex-shrink-0">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                    <span class="text-gray-600">Energy-efficient production facilities</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-6 h-6 flex items-center justify-center bg-[#8CC63F] text-white rounded-full mr-3 mt-1 flex-shrink-0">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                    <span class="text-gray-600">Eco-friendly packaging solutions</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-6 h-6 flex items-center justify-center bg-[#8CC63F] text-white rounded-full mr-3 mt-1 flex-shrink-0">
+                                        <i class="ri-check-line"></i>
+                                    </div>
+                                    <span class="text-gray-600">Water conservation practices throughout production</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to Experience the Bejala Difference?</h2>
+            <p class="text-xl text-white mb-8 max-w-2xl mx-auto">Join farms across Africa that trust Bejala for quality animal nutrition. Contact us today to learn more about our products.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="bg-[#8CC63F] text-white px-6 py-3 font-medium !rounded-button hover:bg-opacity-90 transition whitespace-nowrap">Contact Sales</button>
+                <button class="bg-white text-primary px-6 py-3 font-medium !rounded-button hover:bg-gray-100 transition whitespace-nowrap">Request a Sample</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="text-3xl font-bold text-[#8CC63F] font-['Pacifico'] mb-4">Bejala</div>
+                    <p class="text-gray-400 mb-4">Kindness in every bite. Quality animal nutrition from Ethiopia to the world.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-[#8CC63F] text-white rounded-full hover:bg-opacity-90 transition">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-[#8CC63F] text-white rounded-full hover:bg-opacity-90 transition">
+                            <i class="ri-twitter-x-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-[#8CC63F] text-white rounded-full hover:bg-opacity-90 transition">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-[#8CC63F] text-white rounded-full hover:bg-opacity-90 transition">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-[#8CC63F] transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-[#8CC63F] transition">About Us</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-[#8CC63F] transition">Products</a></li>
+                        <li><a href="#sustainability" class="text-gray-400 hover:text-[#8CC63F] transition">Sustainability</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-[#8CC63F] transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-[#8CC63F] transition">Livestock Feed</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#8CC63F] transition">Poultry Feed</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#8CC63F] transition">Custom Solutions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-[#8CC63F] transition">Bulk Orders</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center text-[#8CC63F] mr-3 mt-1">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <span class="text-gray-400">Addis Ababa, Ethiopia</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center text-[#8CC63F] mr-3 mt-1">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <span class="text-gray-400">+251 912 345 678</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center text-[#8CC63F] mr-3 mt-1">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <span class="text-gray-400">info@bejala.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 mb-4 md:mb-0">© 2025 Bejala. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-500 hover:text-[#8CC63F] transition">Privacy Policy</a>
+                        <a href="#" class="text-gray-500 hover:text-[#8CC63F] transition">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script id="mobileMenu">
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('.ri-menu-line').parentElement;
+            const nav = document.querySelector('nav');
+            
+            menuButton.addEventListener('click', function() {
+                if (nav.classList.contains('hidden')) {
+                    nav.classList.remove('hidden');
+                    nav.classList.add('flex', 'flex-col', 'absolute', 'top-16', 'right-4', 'bg-white', 'shadow-lg', 'p-4', 'rounded-lg', 'z-50', 'space-y-4');
+                } else {
+                    nav.classList.add('hidden');
+                    nav.classList.remove('flex', 'flex-col', 'absolute', 'top-16', 'right-4', 'bg-white', 'shadow-lg', 'p-4', 'rounded-lg', 'z-50', 'space-y-4');
+                }
+            });
+        });
+    </script>
+
+    <script id="smoothScroll">
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        const nav = document.querySelector('nav');
+                        if (window.innerWidth < 768 && !nav.classList.contains('hidden')) {
+                            nav.classList.add('hidden');
+                            nav.classList.remove('flex', 'flex-col', 'absolute', 'top-16', 'right-4', 'bg-white', 'shadow-lg', 'p-4', 'rounded-lg', 'z-50', 'space-y-4');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
